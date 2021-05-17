@@ -1,0 +1,129 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 12 SAM files                                     ||
+||                           o AKG-1_FRAS202101650-1r_aligned.sam             ||
+||                           o AKG-2_FRAS202101651-1r_aligned.sam             ||
+||                           o AKG-3_FRAS202101652-1r_aligned.sam             ||
+||                           o AKG-4_FRAS202101653-1r_aligned.sam             ||
+||                           o ctrl-1_FRAS202101646-1r_aligned.sam            ||
+||                           o ctrl-2_FRAS202101647-1r_aligned.sam            ||
+||                           o ctrl-3_FRAS202101648-1r_aligned.sam            ||
+||                           o ctrl-4_FRAS202101649-1r_aligned.sam            ||
+||                           o Pyr-1_FRAS202101654-1r_aligned.sam             ||
+||                           o Pyr-2_FRAS202101655-1r_aligned.sam             ||
+||                           o Pyr-3_FRAS202101656-1r_aligned.sam             ||
+||                           o Pyr-4_FRAS202101657-1r_aligned.sam             ||
+||                                                                            ||
+||             Output file : matrix_paired.txt                                ||
+||                 Summary : matrix_paired.txt.summary                        ||
+||              Annotation : Homo_sapiens.GRCh38.84.gtf.gz (GTF)              ||
+||      Dir for temp files : /public/workspace/zhihong/featureCounts          ||
+||                                                                            ||
+||                 Threads : 8                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : yes                                              ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+||          Chimeric reads : counted                                          ||
+||        Both ends mapped : not required                                     ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file Homo_sapiens.GRCh38.84.gtf.gz ...                     ||
+||    Features : 1176808                                                      ||
+||    Meta-features : 60675                                                   ||
+||    Chromosomes/contigs : 59                                                ||
+||                                                                            ||
+|| Process SAM file AKG-1_FRAS202101650-1r_aligned.sam...                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 19825757                                             ||
+||    Successfully assigned alignments : 14171506 (71.5%)                     ||
+||    Running time : 0.47 minutes                                             ||
+||                                                                            ||
+|| Process SAM file AKG-2_FRAS202101651-1r_aligned.sam...                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 20996848                                             ||
+||    Successfully assigned alignments : 14833937 (70.6%)                     ||
+||    Running time : 0.49 minutes                                             ||
+||                                                                            ||
+|| Process SAM file AKG-3_FRAS202101652-1r_aligned.sam...                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 21979707                                             ||
+||    Successfully assigned alignments : 15788812 (71.8%)                     ||
+||    Running time : 0.52 minutes                                             ||
+||                                                                            ||
+|| Process SAM file AKG-4_FRAS202101653-1r_aligned.sam...                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 20950451                                             ||
+||    Successfully assigned alignments : 14878393 (71.0%)                     ||
+||    Running time : 0.59 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ctrl-1_FRAS202101646-1r_aligned.sam...                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 23386882                                             ||
+||    Successfully assigned alignments : 16681590 (71.3%)                     ||
+||    Running time : 0.59 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ctrl-2_FRAS202101647-1r_aligned.sam...                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 21067446                                             ||
+||    Successfully assigned alignments : 15153540 (71.9%)                     ||
+||    Running time : 0.50 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ctrl-3_FRAS202101648-1r_aligned.sam...                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 23764546                                             ||
+||    Successfully assigned alignments : 17015826 (71.6%)                     ||
+||    Running time : 0.56 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ctrl-4_FRAS202101649-1r_aligned.sam...                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 21448667                                             ||
+||    Successfully assigned alignments : 15406185 (71.8%)                     ||
+||    Running time : 0.51 minutes                                             ||
+||                                                                            ||
+|| Process SAM file Pyr-1_FRAS202101654-1r_aligned.sam...                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 22226540                                             ||
+||    Successfully assigned alignments : 15862609 (71.4%)                     ||
+||    Running time : 0.54 minutes                                             ||
+||                                                                            ||
+|| Process SAM file Pyr-2_FRAS202101655-1r_aligned.sam...                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 21641932                                             ||
+||    Successfully assigned alignments : 15575244 (72.0%)                     ||
+||    Running time : 0.52 minutes                                             ||
+||                                                                            ||
+|| Process SAM file Pyr-3_FRAS202101656-1r_aligned.sam...                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 25528461                                             ||
+||    Successfully assigned alignments : 18419296 (72.2%)                     ||
+||    Running time : 0.61 minutes                                             ||
+||                                                                            ||
+|| Process SAM file Pyr-4_FRAS202101657-1r_aligned.sam...                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 27817862                                             ||
+||    Successfully assigned alignments : 19763511 (71.0%)                     ||
+||    Running time : 0.65 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "/public/workspace/zhiho  ||
+|| ng/featureCounts/matrix_paired.txt.summary"                                ||
+||                                                                            ||
+\\============================================================================//
+
