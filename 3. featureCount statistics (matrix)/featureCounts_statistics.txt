@@ -26,7 +26,7 @@
 ||             Output file : matrix_paired.txt                                ||
 ||                 Summary : matrix_paired.txt.summary                        ||
 ||              Annotation : Homo_sapiens.GRCh38.84.gtf.gz (GTF)              ||
-||      Dir for temp files : /public/workspace/zhihong/featureCounts          ||
+||      Dir for temp files : /public/workspace/3190******bit/featureCounts          ||
 ||                                                                            ||
 ||                 Threads : 8                                                ||
 ||                   Level : meta-feature level                               ||
@@ -122,8 +122,8 @@
 || Write the final count table.                                               ||
 || Write the read assignment summary.                                         ||
 ||                                                                            ||
-|| Summary of counting results can be found in file "/public/workspace/zhiho  ||
-|| ng/featureCounts/matrix_paired.txt.summary"                                ||
+|| Summary of counting results can be found in file "/public/workspace
+/featureCounts/matrix_paired.txt.summary"                                ||
 ||                                                                            ||
 \\============================================================================//
 
