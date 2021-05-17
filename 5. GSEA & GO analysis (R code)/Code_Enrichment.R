@@ -82,7 +82,7 @@ go_akb <- gseGO(geneList = Rank_ensembl_akb,
 dotplot(go_akb)
 
 go_akb[grep("adhesion",go_akb@result$Description),]
-go_pyru <- gseGO(geneList = Rank_ensembl_pyru[abs(Rank_ensembl_pyru)>0.5],
+go_pyru <- gseGO(geneList = Rank_ensembl_pyru,
                 OrgDb = org.Hs.eg.db,
                 keyType = "ENSEMBL")
 dotplot(go_pyru)
